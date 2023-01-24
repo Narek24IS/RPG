@@ -3,7 +3,7 @@
 int player_death_check() {
     // Проверка смерти игрока и окончание игры в таком случае
     if (player_hp == 0) {
-        printf("You are dead! Game over!\n");
+        printf("%s is dead! Game over!\n", nickname);
         exit(0);
     }
     return 0;
@@ -15,8 +15,8 @@ int lvl_up_check() {
     if (player_exp / level_exp > 0) {
         int dmg_up = rand() % 5 + 1;
         ++player_level;
-        printf("Congratulations! You got level %d!\n\
-Your damage has increased by %d and your max health has increased by %d!\n\n",
+        printf("Congratulations %s! You got level %d!\n\
+Your damage has increased by %d and your max health has increased by %d!\n\n",nickname,
                player_level, dmg_up, hp_up);
         player_max_hp += hp_up;
         player_hp += hp_up;
@@ -77,8 +77,8 @@ int battle() {
     int enemy_hp;
     char enemy_name[10];
 
-    printf("\nChoose enemy:\n 1. Goblin\n 2. Cobold\n "
-           "3. Murlok\n 4. Ent\n");
+    printf("\nChoose enemy, %s:\n 1. Goblin\n 2. Cobold\n "
+           "3. Murlok\n 4. Ent\n", nickname);
 
     action = getchar();
 
@@ -139,7 +139,7 @@ int battle() {
 
 int status() {
     // Показывает все характеристики игрока на данный момент
-    printf("%s\n\nLevel:%d\n\nEXP:%d/%d\n\nHP:%d/%d\n\nDamage:%d\n\nYour coins:%d\n\n",
+    printf("\n%s\n\nLevel:%d\n\nEXP:%d/%d\n\nHP:%d/%d\n\nDamage:%d\n\nYour coins:%d\n\n",
            nickname, player_level, player_exp, level_exp, player_hp, player_max_hp,
            player_dmg, player_coins);
 
@@ -185,7 +185,7 @@ int healed() {
         player_coins -= sp_coin;
         if (player_hp > player_max_hp)
             player_hp = player_max_hp;
-        printf("You were healed by %d HP!\n\n Your HP: %d",
+        printf("You were healed by %d HP!\n\nYour HP: %d",
                sp_coin * 5, player_hp);
     }
     return 0;
