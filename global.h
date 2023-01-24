@@ -1,14 +1,17 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 
-int player_hp = 100;
-int player_dmg = 10;
-int player_coins = 0;
-int player_level = 1;
-int player_exp = 0;
-int level_exp = 100;
-int player_max_hp = 100;
-char nickname[10];
+#include "main.h"
+#include "battle.h"
+#include "player_death_check.h"
+#include "act_choose.h"
+#include "lvl_up_check.h"
+#include "heal.h"
+#include "enemy_choose.h"
+#include "status.h"
+#include "looting.h"
+#include "hello.h"
+#include "global_variables.h"
 
 #include <stdio.h>
 #include <string.h>
