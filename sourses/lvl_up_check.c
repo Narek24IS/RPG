@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "headers/lvl_up_check.h"
-#include "headers/global.h"
+#include "includes/lvl_up_check.h"
+#include "includes/global.h"
 
 int lvl_up_check() {
     // Поверка поднял ли игрок уровень и повышение характеристик в таком случае

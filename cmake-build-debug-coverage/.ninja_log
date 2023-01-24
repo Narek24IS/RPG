@@ -1,14 +1,4 @@
 # ninja log v5
 4	223	6962449923291587	CMakeFiles/RPG.dir/main.c.obj	d76f883fe874a8c9
-418	742	6962449928277655	CMakeFiles/RPG.dir/looting.c.obj	b7b6ecf439ff5435
 165	401	6962453453693405	RPG.exe	1610bb952183b37b
-232	444	6962449925392067	CMakeFiles/RPG.dir/battle.c.obj	974c6f2642b0ec09
-239	436	6962449925381979	CMakeFiles/RPG.dir/lvl_up_check.c.obj	24f58beb54009209
-742	917	6962449930332815	CMakeFiles/RPG.dir/player_death_check.c.obj	66528a5035bdbb77
-12	239	6962449923357268	CMakeFiles/RPG.dir/hello.c.obj	ed75811b46931808
-3	164	6962453451396041	CMakeFiles/RPG.dir/act_choose.c.obj	98dd0548796ed1b6
-224	417	6962449925225900	CMakeFiles/RPG.dir/status.c.obj	c222dc9f6a6d0e23
-20	232	6962449923325485	CMakeFiles/RPG.dir/heal.c.obj	74d37efc0dc4abae
-445	751	6962449928474545	CMakeFiles/RPG.dir/enemy_choose.c.obj	5a4999c7a1e23a0d
-751	875	6962449929841914	CMakeFiles/RPG.dir/global_variables.c.obj	b75f8b4da29fe10f
-2	414	6962519480346075	build.ninja	d06d671018ff31e5
+2	414	6962556638129888	build.ninja	d06d671018ff31e5

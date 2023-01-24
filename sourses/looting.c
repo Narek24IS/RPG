@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "headers/global.h"
-#include "headers/looting.h"
+#include "includes/global.h"
+#include "includes/looting.h"
 
 int looting(int enemy_mod, int enemy_lvl, char *enemy_name) {
     // Выпадение награды за победу над противником

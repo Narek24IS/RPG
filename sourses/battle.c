@@ -1,10 +1,10 @@
 //
 // Created by Hikinari on 24.01.2023.
 //
-#include "headers/main.h"
-#include "headers/battle.h"
-#include "headers/global.h"
-#include "headers/player_death_check.h"
+#include "includes/main.h"
+#include "includes/battle.h"
+#include "includes/global.h"
+#include "includes/player_death_check.h"
 
 int battle() {
     // Механика сражения, выборы действий

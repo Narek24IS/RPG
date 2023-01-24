@@ -1,5 +1,5 @@
-#include "headers/global.h"
-#include "headers/main.h"
+#include "includes/global.h"
+#include "includes/main.h"
 
 int main() {
     //Основное действие

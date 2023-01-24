@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "headers/global.h"
-#include "headers/status.h"
+#include "includes/global.h"
+#include "includes/status.h"
 
 int status() {
     // Показывает все характеристики игрока на данный момент

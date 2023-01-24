@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "headers/global.h"
-#include "headers/enemy_choose.h"
+#include "includes/global.h"
+#include "includes/enemy_choose.h"
 
 int enemy_choose(int action, char *enemy_name) {
     // Выбор противника на бой

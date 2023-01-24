@@ -1,8 +1,8 @@
 //
 // Created by Hikinari on 24.01.2023.
 //
-#include "headers/global.h"
-#include "headers/act_choose.h"
+#include "includes/global.h"
+#include "includes/act_choose.h"
 
 int act_choose() {
     // Выбор следующего действия
