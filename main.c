@@ -7,6 +7,7 @@ int player_death_check()
         printf("You are dead! Game over!\n");
         exit(0);
     }
+    return 0;
 }
 
 int lvl_up_check()
@@ -31,35 +32,38 @@ Your damage has increased by %d and your max health has increased by %d!\n\n",
 }
 
 int enemy_choose(char action, char *enemy_name) {
-    int enemy_mod;
+    int enemy_mod = 0;
 
-    if (action == '1') {
-        enemy_mod = 1;
-        strcpy(enemy_name, "Goblin");
-        fflush(stdin);
-    } else if (action == '2') {
-        enemy_mod = 2;
-        strcpy(enemy_name, "Cobold");
-        fflush(stdin);
-    } else if (action == '3') {
-        enemy_mod = 3;
-        strcpy(enemy_name, "Murlok");
-        fflush(stdin);
-    } else if (action == '4') {
-        enemy_mod = 4;
-        strcpy(enemy_name, "Ent");
-        fflush(stdin);
-    } else {
-        printf("Please, select one of the options from the list!\n\n");
-        fflush(stdin);
+    while (enemy_mod == 0)
+    {
+        if (action == '1') {
+            enemy_mod = 1;
+            strcpy(enemy_name, "Goblin");
+            fflush(stdin);
+        } else if (action == '2') {
+            enemy_mod = 2;
+            strcpy(enemy_name, "Cobold");
+            fflush(stdin);
+        } else if (action == '3') {
+            enemy_mod = 3;
+            strcpy(enemy_name, "Murlok");
+            fflush(stdin);
+        } else if (action == '4') {
+            enemy_mod = 4;
+            strcpy(enemy_name, "Ent");
+            fflush(stdin);
+        } else {
+            printf("Please, select one of the options from the list!\n\n");
+            fflush(stdin);
+        }
     }
     return enemy_mod;
 }
 
 int looting(int enemy_mod,int enemy_lvl, char *enemy_name)
 {
-    int enemy_exp = rand() % 40 * enemy_mod * enemy_lvl;
-    int enemy_coins = rand() % 3 * enemy_mod * enemy_lvl;
+    int enemy_exp = (rand() % 50 + enemy_mod + enemy_lvl) * enemy_mod * enemy_lvl;
+    int enemy_coins = rand() % 4 + enemy_mod + enemy_lvl;
 
     printf("\n%s has been defeat! You earn %d coins and %d EXP!\n\n",enemy_name, enemy_coins, enemy_exp);
     player_coins += enemy_coins;
@@ -76,8 +80,8 @@ int battle()
     int enemy_hp;
     char enemy_name[10];
 
-    printf("\nChoose enemy:\n 1. Goblin\n 2. Cobold\n\
- 3. Murlok\n 4. Ent\n");
+    printf("\nChoose enemy:\n 1. Goblin\n 2. Cobold\n "
+           "3. Murlok\n 4. Ent\n");
 
     action = getchar();
 
@@ -87,7 +91,7 @@ int battle()
 
     printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n",enemy_name, enemy_lvl, enemy_hp);
 
-    for (enemy_hp; enemy_hp >= 0;)
+    for (; enemy_hp >= 0;)
     {
         int enemy_dmg = rand()%4*enemy_mod*enemy_lvl;
 
@@ -192,15 +196,19 @@ int healed()
     int sp_coin;
 
     printf("How many coins do you want to spend on healing?"
-           "\n1 coin = 5 HP\nNow you have %d HP and %d coins\n", player_hp, player_coins);
+           "\n1 coin = 5 HP\nNow you have %d/%d HP and %d coins\n", player_hp,player_max_hp, player_coins);
     scanf("%d", &sp_coin);
-    player_hp += (sp_coin * 5);
-    player_coins -= sp_coin;
-    if (player_hp > player_max_hp)
-        player_hp = player_max_hp;
-    printf("You were healed by %d HP!\n\n\
-Your HP: %d",
-           sp_coin * 5, player_hp);
+    if (sp_coin > player_coins){
+        printf("You have only %d coins.", player_coins);
+    }
+    else {
+        player_hp += (sp_coin * 5);
+        player_coins -= sp_coin;
+        if (player_hp > player_max_hp)
+            player_hp = player_max_hp;
+        printf("You were healed by %d HP!\n\n Your HP: %d",
+               sp_coin * 5, player_hp);
+    }
     return 0;
 }
 
