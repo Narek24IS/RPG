@@ -23,8 +23,7 @@ int hello() {
     getchar();
     fflush(stdin);
     status();
-    printf("Not bad! Let's see how you fight!\n"
-           "Choose your enemy!\n");
+    printf("Not bad! Let's see how you fight!\n\n");
     battle();
 
     return 0;

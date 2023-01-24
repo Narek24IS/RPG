@@ -10,15 +10,15 @@ add_executable(RPG
         .idea/modules.xml
         .idea/RPG.iml
         .idea/workspace.xml
-        headers/global.h
-        main.c headers/main.h
-        heal.c headers/heal.h
-        hello.c headers/hello.h
-        status.c headers/status.h
-        battle.c headers/battle.h
-        looting.c headers/looting.h
-        act_choose.c headers/act_choose.h
-        lvl_up_check.c headers/lvl_up_check.h
-        enemy_choose.c headers/enemy_choose.h
-        global_variables.c headers/global_variables.h
-        player_death_check.c headers/player_death_check.h)
+        src/global.h
+        main.c src/main.h
+        heal.c src/heal.h
+        hello.c src/hello.h
+        status.c src/status.h
+        battle.c src/battle.h
+        looting.c src/looting.h
+        act_choose.c src/act_choose.h
+        lvl_up_check.c src/lvl_up_check.h
+        enemy_choose.c src/enemy_choose.h
+        global_variables.c src/global_variables.h
+        player_death_check.c src/player_death_check.h)
