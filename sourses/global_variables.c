@@ -2,8 +2,6 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "includes/global_variables.h"
-
 int player_hp = 100;
 int player_dmg = 10;
 int player_coins = 0;

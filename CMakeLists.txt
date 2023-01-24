@@ -21,4 +21,5 @@ add_executable(RPG
         sourses/lvl_up_check.c includes/lvl_up_check.h
         sourses/enemy_choose.c includes/enemy_choose.h
         sourses/global_variables.c includes/global_variables.h
-        sourses/player_death_check.c includes/player_death_check.h)
+        sourses/player_death_check.c includes/player_death_check.h
+        )

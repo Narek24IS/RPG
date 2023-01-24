@@ -2,7 +2,6 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "includes/lvl_up_check.h"
 #include "includes/global.h"
 
 int lvl_up_check() {

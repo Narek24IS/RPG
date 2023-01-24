@@ -3,7 +3,6 @@
 //
 
 #include "includes/global.h"
-#include "includes/heal.h"
 
 int heal() {
     // Лечение за деньги

@@ -3,7 +3,6 @@
 //
 
 #include "includes/global.h"
-#include "includes/enemy_choose.h"
 
 int enemy_choose(int action, char *enemy_name) {
     // Выбор противника на бой

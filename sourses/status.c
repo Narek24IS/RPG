@@ -3,7 +3,6 @@
 //
 
 #include "includes/global.h"
-#include "includes/status.h"
 
 int status() {
     // Показывает все характеристики игрока на данный момент

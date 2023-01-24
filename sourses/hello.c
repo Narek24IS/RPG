@@ -3,7 +3,6 @@
 //
 
 #include "includes/global.h"
-#include "includes/hello.h"
 
 int hello() {
     // Начальное приветствие игрока

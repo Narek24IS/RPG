@@ -3,7 +3,6 @@
 //
 
 #include "includes/global.h"
-#include "includes/looting.h"
 
 int looting(int enemy_mod, int enemy_lvl, char *enemy_name) {
     // Выпадение награды за победу над противником
