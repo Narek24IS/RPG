@@ -2,14 +2,19 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "global.h"
-#include "enemy_choose.h"
+#include "headers/global.h"
+#include "headers/enemy_choose.h"
 
 int enemy_choose(int action, char *enemy_name) {
     // Выбор противника на бой
     int enemy_mod = 0;
 
     while (enemy_mod == 0) {
+        printf("\nChoose enemy, %s:\n 1. Goblin\n 2. Cobold\n "
+               "3. Murlok\n 4. Ent\n", nickname);
+
+        action = getchar();
+
         if (action == '1') {
             enemy_mod = 1;
             strcpy(enemy_name, "Goblin");

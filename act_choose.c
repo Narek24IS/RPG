@@ -1,8 +1,8 @@
 //
 // Created by Hikinari on 24.01.2023.
 //
-#include "global.h"
-#include "act_choose.h"
+#include "headers/global.h"
+#include "headers/act_choose.h"
 
 int act_choose() {
     // Выбор следующего действия
@@ -24,10 +24,10 @@ int act_choose() {
         fflush(stdin);
     } else if (action == '4') {
         printf("Good Bye!\n");
+        exit(0);
     } else {
         printf("Please, select one of the options from the list!\n");
         fflush(stdin);
-
     }
     return 0;
 }

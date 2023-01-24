@@ -1,10 +1,10 @@
 //
 // Created by Hikinari on 24.01.2023.
 //
-#include "main.h"
-#include "battle.h"
-#include "global.h"
-#include "player_death_check.h"
+#include "headers/main.h"
+#include "headers/battle.h"
+#include "headers/global.h"
+#include "headers/player_death_check.h"
 
 int battle() {
     // Механика сражения, выборы действий
@@ -13,11 +13,6 @@ int battle() {
     int enemy_lvl = rand() % player_level + 1;
     int enemy_hp;
     char enemy_name[10];
-
-    printf("\nChoose enemy, %s:\n 1. Goblin\n 2. Cobold\n "
-           "3. Murlok\n 4. Ent\n", nickname);
-
-    action = getchar();
 
     enemy_mod = enemy_choose(action, enemy_name);
 

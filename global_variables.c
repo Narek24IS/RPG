@@ -2,7 +2,7 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "global_variables.h"
+#include "headers/global_variables.h"
 
 int player_hp = 100;
 int player_dmg = 10;

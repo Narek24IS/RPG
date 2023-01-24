@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "global.h"
-#include "heal.h"
+#include "headers/global.h"
+#include "headers/heal.h"
 
 int heal() {
     // Лечение за деньги

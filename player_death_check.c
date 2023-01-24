@@ -1,8 +1,8 @@
     //
 // Created by Hikinari on 24.01.2023.
 //
-#include "global.h"
-#include "player_death_check.h"
+#include "headers/global.h"
+#include "headers/player_death_check.h"
 
 int player_death_check() {
     // Проверка смерти игрока и окончание игры в таком случае

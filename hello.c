@@ -2,8 +2,8 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-#include "global.h"
-#include "hello.h"
+#include "headers/global.h"
+#include "headers/hello.h"
 
 int hello() {
     // Начальное приветствие игрока

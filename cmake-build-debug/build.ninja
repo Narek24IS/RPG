@@ -56,34 +56,6 @@ build CMakeFiles/RPG.dir/main.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Do
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir
 
-build CMakeFiles/RPG.dir/player_death_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/player_death_check.c || cmake_object_order_depends_target_RPG
-  DEP_FILE = CMakeFiles\RPG.dir\player_death_check.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
-  OBJECT_DIR = CMakeFiles\RPG.dir
-  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
-
-build CMakeFiles/RPG.dir/battle.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/battle.c || cmake_object_order_depends_target_RPG
-  DEP_FILE = CMakeFiles\RPG.dir\battle.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
-  OBJECT_DIR = CMakeFiles\RPG.dir
-  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
-
-build CMakeFiles/RPG.dir/lvl_up_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/lvl_up_check.c || cmake_object_order_depends_target_RPG
-  DEP_FILE = CMakeFiles\RPG.dir\lvl_up_check.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
-  OBJECT_DIR = CMakeFiles\RPG.dir
-  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
-
-build CMakeFiles/RPG.dir/act_choose.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/act_choose.c || cmake_object_order_depends_target_RPG
-  DEP_FILE = CMakeFiles\RPG.dir\act_choose.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
-  OBJECT_DIR = CMakeFiles\RPG.dir
-  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
-
 build CMakeFiles/RPG.dir/heal.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/heal.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\heal.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
@@ -105,8 +77,29 @@ build CMakeFiles/RPG.dir/status.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir
 
+build CMakeFiles/RPG.dir/battle.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/battle.c || cmake_object_order_depends_target_RPG
+  DEP_FILE = CMakeFiles\RPG.dir\battle.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
+  OBJECT_DIR = CMakeFiles\RPG.dir
+  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
+
 build CMakeFiles/RPG.dir/looting.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/looting.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\looting.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
+  OBJECT_DIR = CMakeFiles\RPG.dir
+  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
+
+build CMakeFiles/RPG.dir/act_choose.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/act_choose.c || cmake_object_order_depends_target_RPG
+  DEP_FILE = CMakeFiles\RPG.dir\act_choose.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
+  OBJECT_DIR = CMakeFiles\RPG.dir
+  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
+
+build CMakeFiles/RPG.dir/lvl_up_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/lvl_up_check.c || cmake_object_order_depends_target_RPG
+  DEP_FILE = CMakeFiles\RPG.dir\lvl_up_check.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
@@ -126,6 +119,13 @@ build CMakeFiles/RPG.dir/global_variables.c.obj: C_COMPILER__RPG_Debug C$:/Users
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir
 
+build CMakeFiles/RPG.dir/player_death_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/player_death_check.c || cmake_object_order_depends_target_RPG
+  DEP_FILE = CMakeFiles\RPG.dir\player_death_check.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
+  OBJECT_DIR = CMakeFiles\RPG.dir
+  OBJECT_FILE_DIR = CMakeFiles\RPG.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RPG
@@ -134,7 +134,7 @@ build CMakeFiles/RPG.dir/global_variables.c.obj: C_COMPILER__RPG_Debug C$:/Users
 #############################################
 # Link the executable RPG.exe
 
-build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/main.c.obj CMakeFiles/RPG.dir/player_death_check.c.obj CMakeFiles/RPG.dir/battle.c.obj CMakeFiles/RPG.dir/lvl_up_check.c.obj CMakeFiles/RPG.dir/act_choose.c.obj CMakeFiles/RPG.dir/heal.c.obj CMakeFiles/RPG.dir/hello.c.obj CMakeFiles/RPG.dir/status.c.obj CMakeFiles/RPG.dir/looting.c.obj CMakeFiles/RPG.dir/enemy_choose.c.obj CMakeFiles/RPG.dir/global_variables.c.obj
+build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/main.c.obj CMakeFiles/RPG.dir/heal.c.obj CMakeFiles/RPG.dir/hello.c.obj CMakeFiles/RPG.dir/status.c.obj CMakeFiles/RPG.dir/battle.c.obj CMakeFiles/RPG.dir/looting.c.obj CMakeFiles/RPG.dir/act_choose.c.obj CMakeFiles/RPG.dir/lvl_up_check.c.obj CMakeFiles/RPG.dir/enemy_choose.c.obj CMakeFiles/RPG.dir/global_variables.c.obj CMakeFiles/RPG.dir/player_death_check.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RPG.dir
