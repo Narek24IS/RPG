@@ -1,5 +1,14 @@
 #include "global.h"
 
+int player_death_check()
+{
+    if (player_hp == 0)
+    {
+        printf("You are dead! Game over!\n");
+        exit(0);
+    }
+}
+
 int lvl_up_check()
 {
     // проверка поднял ли игрок уровень
@@ -21,6 +30,43 @@ Your damage has increased by %d and your max health has increased by %d!\n\n",
     return 0;
 }
 
+int enemy_choose(char action, char *enemy_name) {
+    int enemy_mod;
+
+    if (action == '1') {
+        enemy_mod = 1;
+        strcpy(enemy_name, "Goblin");
+        fflush(stdin);
+    } else if (action == '2') {
+        enemy_mod = 2;
+        strcpy(enemy_name, "Cobold");
+        fflush(stdin);
+    } else if (action == '3') {
+        enemy_mod = 3;
+        strcpy(enemy_name, "Murlok");
+        fflush(stdin);
+    } else if (action == '4') {
+        enemy_mod = 4;
+        strcpy(enemy_name, "Ent");
+        fflush(stdin);
+    } else {
+        printf("Please, select one of the options from the list!\n\n");
+        fflush(stdin);
+    }
+    return enemy_mod;
+}
+
+int looting(int enemy_mod,int enemy_lvl, char *enemy_name)
+{
+    int enemy_exp = rand() % 40 * enemy_mod * enemy_lvl;
+    int enemy_coins = rand() % 3 * enemy_mod * enemy_lvl;
+
+    printf("\n%s has been defeat! You earn %d coins and %d EXP!\n\n",enemy_name, enemy_coins, enemy_exp);
+    player_coins += enemy_coins;
+    player_exp += enemy_exp;
+    lvl_up_check();
+}
+
 int battle()
 {
     // механика сражения, выборы действий и получение награды
@@ -35,39 +81,7 @@ int battle()
 
     action = getchar();
 
-    if (action == '1')
-    {
-        enemy_mod = 1;
-        strcpy(enemy_name, "Goblin");
-        fflush(stdin);
-    }
-
-    else if (action == '2')
-    {
-        enemy_mod = 2;
-        strcpy(enemy_name, "Cobold");
-        fflush(stdin);
-    }
-
-    else if (action == '3')
-    {
-        enemy_mod = 3;
-        strcpy(enemy_name, "Murlok");
-        fflush(stdin);
-    }
-
-    else if (action == '4')
-    {
-        enemy_mod = 4;
-        strcpy(enemy_name, "Ent");
-        fflush(stdin);
-    }
-
-    else
-    {
-        printf("Please, select one of the options from the list!\n\n");
-        fflush(stdin);
-    }
+    enemy_mod = enemy_choose(action, enemy_name);
 
     enemy_hp = enemy_lvl * player_dmg * enemy_mod - rand()%10 * 10 / 15;
 
@@ -122,23 +136,13 @@ int battle()
 
         printf("\nYour HP:%d\n\n%s's HP:%d\n", player_hp, enemy_name, enemy_hp);
 
-        if (player_hp == 0)
-        {
-            printf("You are dead! Game over!");
-            return 0;
-        }
+        player_death_check();
 
         fflush(stdin); // clear buffer
 
-        if (enemy_hp <= 0)
+        if (enemy_hp == 0)
         {
-            int enemy_exp = rand() % 40 * enemy_mod * enemy_lvl;
-            int enemy_coins = rand() % 3 * enemy_mod * enemy_lvl;
-
-            printf("\n%s has been defeat! You earn %d coins and %d EXP!\n\n",enemy_name, enemy_coins, enemy_exp);
-            player_coins += enemy_coins;
-            player_exp += enemy_exp;
-            lvl_up_check();
+            looting(enemy_mod, enemy_lvl, enemy_name);
             break;
         }
     }
@@ -169,14 +173,14 @@ int hello(char *nickname)
     else
         fflush(stdin); // очистить буфер от лишних символов
 
-    printf("Okay, %s, now let's check your stats!\n\
-Press Enter to check your stats...",
+    printf("Okay, %s, now let's check your stats!\n"
+           "Press Enter to check your stats...",
            nickname);
     getchar();
     fflush(stdin);
     status();
-    printf("Not bad! Let's see how you fight!\n\
-Choose your enemy!\n");
+    printf("Not bad! Let's see how you fight!\n"
+           "Choose your enemy!\n");
     battle();
 
     return 0;
