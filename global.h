@@ -8,6 +8,7 @@ int player_level = 1;
 int player_exp = 0;
 int level_exp = 100;
 int player_max_hp = 100;
+char nickname[10];
 
 #include <stdio.h>
 #include <string.h>
