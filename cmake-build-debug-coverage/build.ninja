@@ -51,77 +51,77 @@ build cmake_object_order_depends_target_RPG: phony || CMakeFiles/RPG.dir
 
 build CMakeFiles/RPG.dir/sourses/main.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/main.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\main.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/heal.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/heal.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\heal.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/hello.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/hello.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\hello.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/status.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/status.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\status.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/battle.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/battle.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\battle.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/looting.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/looting.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\looting.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/act_choose.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/act_choose.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\act_choose.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/lvl_up_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/lvl_up_check.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\lvl_up_check.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/enemy_choose.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/enemy_choose.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\enemy_choose.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/global_variables.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/global_variables.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\global_variables.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
 build CMakeFiles/RPG.dir/sourses/player_death_check.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/player_death_check.c || cmake_object_order_depends_target_RPG
   DEP_FILE = CMakeFiles\RPG.dir\sourses\player_death_check.c.obj.d
-  FLAGS = --coverage -g -fdiagnostics-color=always
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
   INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
@@ -134,9 +134,9 @@ build CMakeFiles/RPG.dir/sourses/player_death_check.c.obj: C_COMPILER__RPG_Debug
 #############################################
 # Link the executable RPG.exe
 
-build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/sourses/main.c.obj CMakeFiles/RPG.dir/sourses/heal.c.obj CMakeFiles/RPG.dir/sourses/hello.c.obj CMakeFiles/RPG.dir/sourses/status.c.obj CMakeFiles/RPG.dir/sourses/battle.c.obj CMakeFiles/RPG.dir/sourses/looting.c.obj CMakeFiles/RPG.dir/sourses/act_choose.c.obj CMakeFiles/RPG.dir/sourses/lvl_up_check.c.obj CMakeFiles/RPG.dir/sourses/enemy_choose.c.obj CMakeFiles/RPG.dir/sourses/global_variables.c.obj CMakeFiles/RPG.dir/sourses/player_death_check.c.obj
+build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/sourses/main.c.obj CMakeFiles/RPG.dir/sourses/heal.c.obj CMakeFiles/RPG.dir/sourses/hello.c.obj CMakeFiles/RPG.dir/sourses/status.c.obj CMakeFiles/RPG.dir/sourses/battle.c.obj CMakeFiles/RPG.dir/sourses/looting.c.obj CMakeFiles/RPG.dir/sourses/act_choose.c.obj CMakeFiles/RPG.dir/sourses/lvl_up_check.c.obj CMakeFiles/RPG.dir/sourses/enemy_choose.c.obj CMakeFiles/RPG.dir/sourses/global_variables.c.obj CMakeFiles/RPG.dir/sourses/player_death_check.c.obj | C$:/msys64/mingw64/lib/libncurses.a
   FLAGS = --coverage -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/msys64/mingw64/lib/libncurses.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RPG.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -189,14 +189,14 @@ build all: phony RPG.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Hikinari/Documents/C/RPG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindCurses.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPkgConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Hikinari/Documents/C/RPG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Hikinari/Documents/C/RPG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindCurses.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPkgConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Hikinari/Documents/C/RPG/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

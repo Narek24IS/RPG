@@ -1301,3 +1301,19 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the function cbreak exists in the C:/msys64/mingw64/lib/libncurses.a passed with the following output:
+Change Dir: C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.1/bin/ninja/win/ninja.exe cmTC_eee01 && [1/2] Building C object CMakeFiles/cmTC_eee01.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_eee01.exe
+
+
+
+Determining if the function nodelay exists in the C:/msys64/mingw64/lib/libncurses.a passed with the following output:
+Change Dir: C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/JetBrains/CLion 2022.3.1/bin/ninja/win/ninja.exe cmTC_8af8b && [1/2] Building C object CMakeFiles/cmTC_8af8b.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_8af8b.exe
+
+
+

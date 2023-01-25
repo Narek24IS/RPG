@@ -5,28 +5,31 @@
 
 int act_choose() {
     // Выбор следующего действия
-    int action;
-
     printf("\nChoose an action:\n 1. Fight with another enemy\n 2. Check your status\n "
            "3. Heal for coins\n 4. Quit the game\n");
+    int action = getchar();
 
-    action = getchar();
-
-    if (action == '1') {
-        fflush(stdin);
-        battle();
-    } else if (action == '2') {
-        status();
-        fflush(stdin);
-    } else if (action == '3') {
-        heal();
-        fflush(stdin);
-    } else if (action == '4') {
-        printf("Good Bye!\n");
-        exit(0);
-    } else {
-        printf("Please, select one of the options from the list!\n");
-        fflush(stdin);
+    switch (action) {
+        case '1':
+            fflush(stdin);
+            battle();
+            break;
+        case '2':
+            status();
+            fflush(stdin);
+            break;
+        case '3':
+            heal();
+            fflush(stdin);
+            break;
+        case '4':
+            printf("Good Bye!\n");
+            exit(0);
+            break;
+        default:
+            printf("Please, select one of the options from the list!\n");
+            fflush(stdin);
+            break;
     }
     return 0;
 }

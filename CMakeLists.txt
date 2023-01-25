@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.24)
-project(RPG)
+project(RPG
+        LANGUAGES C)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 11)
 
-include_directories(.)
+find_package(Curses REQUIRED)
+include_directories(${CURSES_INCLUDE_DIR} .)
+
 
 add_executable(RPG
         .idea/.gitignore
@@ -23,3 +26,5 @@ add_executable(RPG
         sourses/global_variables.c includes/global_variables.h
         sourses/player_death_check.c includes/player_death_check.h
         )
+
+target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARY})
