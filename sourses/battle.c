@@ -17,34 +17,40 @@ int battle() {
 
     printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n", enemy_name, enemy_lvl, enemy_hp);
 
-    for (; enemy_hp >= 0;) {
+    while (enemy_hp >= 0) {
         int enemy_dmg = rand() % 4 * enemy_mod * enemy_lvl;
+        int min_e_mdg = enemy_dmg / 3;
 
         printf("\nChoose an action:\n 1. Attack\n 2. Parry\n 3. Run\n");
         action = getchar();
 
-        if (action == '1') {
-            printf("You dealt %d damage to %s!\n", player_dmg, enemy_name);
-            enemy_hp -= player_dmg;
-            printf("%s dealt to you %d damage!\n", enemy_name, enemy_dmg);
-            player_hp -= enemy_dmg;
-            fflush(stdin);
-        } else if (action == '2') {
-            int min_e_mdg = enemy_dmg / 3;
-
-            printf("You parry the %s attack and damage %d to him!\n", enemy_name, player_dmg / 2);
-            enemy_hp -= player_dmg / 2;
-            printf("%s dealt to you %d damage!\n", enemy_name, min_e_mdg);
-            player_hp -= min_e_mdg;
-            fflush(stdin);
-        } else if (action == '3') {
-            printf("You ran away");
-            fflush(stdin);
-            break;
-        } else {
-            printf("\nChoose one of the 1-3 buttons,what to perform the action\n");
-            fflush(stdin);
+        switch (action) {
+            case '1':
+                printf("You dealt %d damage to %s!\n", player_dmg, enemy_name);
+                enemy_hp -= player_dmg;
+                printf("%s dealt to you %d damage!\n", enemy_name, enemy_dmg);
+                player_hp -= enemy_dmg;
+                fflush(stdin);
+                break;
+            case '2':
+                printf("You parry the %s attack and damage %d to him!\n", enemy_name, player_dmg / 2);
+                enemy_hp -= player_dmg / 2;
+                printf("%s dealt to you %d damage!\n", enemy_name, min_e_mdg);
+                player_hp -= min_e_mdg;
+                fflush(stdin);
+                break;
+            case '3':
+                printf("You ran away");
+                fflush(stdin);
+                break;
+            default:
+                printf("\nChoose one of the 1-3 buttons,what to perform the action\n");
+                fflush(stdin);
+                break;
         }
+
+        if (action == '3')
+            break;
 
         if (enemy_hp < 0)
             enemy_hp = 0;

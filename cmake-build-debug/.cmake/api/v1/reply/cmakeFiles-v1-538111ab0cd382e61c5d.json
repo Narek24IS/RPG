@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-coverage/CMakeFiles/3.24.2/CMakeSystem.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -15,11 +15,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-coverage/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
-		},
-		{
-			"isGenerated" : true,
-			"path" : "cmake-build-debug-coverage/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -83,7 +79,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug-coverage/CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
+			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -108,48 +104,43 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindCurses.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CheckLibraryExists.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPkgConfig.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
+			"path" : "C:/Program Files/JetBrains/CLion 2022.3.1/bin/cmake/win/share/cmake-3.24/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage",
+		"build" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug",
 		"source" : "C:/Users/Hikinari/Documents/C/RPG"
 	},
 	"version" : 
