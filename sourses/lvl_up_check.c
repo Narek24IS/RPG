@@ -11,8 +11,8 @@ int lvl_up_check() {
         int dmg_up = rand() % 5 + 1;
         ++player_level;
         printf("Congratulations %s! You got level %d!\n\
-Your damage has increased by %d and your max health has increased by %d!\n",*nickname,
-               player_level, dmg_up, hp_up);
+Your damage has increased by %d and your max health has increased by %d!\n",nickname,
+        player_level, dmg_up, hp_up);
         player_max_hp += hp_up;
         player_hp += hp_up;
         player_dmg += dmg_up;
