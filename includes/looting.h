@@ -4,5 +4,5 @@
 
 #ifndef RPG_LOOTING_H
 #define RPG_LOOTING_H
-int looting(int enemy_mod, int enemy_lvl, char *enemy_name);
+int looting(int enemyMod, int enemyLVL, char *enemyName);
 #endif //RPG_LOOTING_H

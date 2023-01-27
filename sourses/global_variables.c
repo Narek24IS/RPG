@@ -2,11 +2,12 @@
 // Created by Hikinari on 24.01.2023.
 //
 
-int player_hp = 100;
-int player_dmg = 10;
-int player_coins = 0;
-int player_level = 1;
-int player_exp = 0;
-int level_exp = 100;
-int player_max_hp = 100;
+int playerHP = 100;
+int playerDmg = 10;
+int playerCoins = 0;
+int playerLevel = 1;
+int playerEXP = 0;
+int levelEXP = 100;
+int playerMaxHP = 100;
 char nickname[10];
+int newGame = 1;

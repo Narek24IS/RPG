@@ -6,25 +6,25 @@
 
 int heal() {
     // Лечение за деньги
-    int sp_coin;
+    int spentCoin;
 
     printf("How many coins do you want to spend on healing?"
            "\n1 coin = 5 HP\nNow you have %d/%d HP and %d coins\nAmoun of coins:",
-           player_hp, player_max_hp, player_coins);
+           playerHP, playerMaxHP, playerCoins);
 
     while (1) {
-        scanf("%d", &sp_coin);
+        scanf("%d", &spentCoin);
 
-        if (sp_coin>0) {
-            if (sp_coin > player_coins) {
-                printf("You have only %d coins.\n", player_coins);
+        if (spentCoin>0) {
+            if (spentCoin > playerCoins) {
+                printf("You have only %d coins.\n", playerCoins);
             } else {
-                player_hp += (sp_coin * 5);
-                player_coins -= sp_coin;
-                if (player_hp > player_max_hp)
-                    player_hp = player_max_hp;
+                playerHP += (spentCoin * 5);
+                playerCoins -= spentCoin;
+                if (playerHP > playerMaxHP)
+                    playerHP = playerMaxHP;
                 printf("You were heal by %d HP!\nYour HP: %d\n",
-                       sp_coin * 5, player_hp);
+                       spentCoin * 5, playerHP);
                 fflush(stdin);
                 break;
             }
@@ -32,7 +32,7 @@ int heal() {
         else {
             printf("Enter a number!\n");
             fflush(stdin);
-        };
+        }
     }
     return 0;
 }

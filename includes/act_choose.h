@@ -4,5 +4,5 @@
 
 #ifndef RPG_ACT_CHOOSE_H
 #define RPG_ACT_CHOOSE_H
-int act_choose();
+int actChoose();
 #endif //RPG_ACT_CHOOSE_H

@@ -6,19 +6,19 @@
 int battle() {
     // Механика сражения, выборы действий
     int action;
-    int enemy_mod;
-    int enemy_lvl = rand() % player_level + 1;
+    int enemyMod;
+    int enemyLVL = rand() % playerLevel + 1;
     int enemy_hp;
-    char enemy_name[10];
+    char enemyName[10];
 
-    enemy_mod = enemy_choose(action, enemy_name);
+    enemyMod = enemyChoose(action, enemyName);
 
-    enemy_hp = enemy_lvl * player_dmg * enemy_mod - rand() % 10 * 10 / 15;
+    enemy_hp = enemyLVL * playerDmg * enemyMod - rand() % 10 * 10 / 15;
 
-    printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n", enemy_name, enemy_lvl, enemy_hp);
+    printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n", enemyName, enemyLVL, enemy_hp);
 
     while (enemy_hp >= 0) {
-        int enemy_dmg = rand() % 4 * enemy_mod * enemy_lvl;
+        int enemy_dmg = rand() % 4 * enemyMod * enemyLVL;
         int min_e_mdg = enemy_dmg / 3;
 
         printf("\nChoose an action:\n 1. Attack\n 2. Parry\n 3. Run\n");
@@ -26,17 +26,17 @@ int battle() {
 
         switch (action) {
             case '1':
-                printf("You dealt %d damage to %s!\n", player_dmg, enemy_name);
-                enemy_hp -= player_dmg;
-                printf("%s dealt to you %d damage!\n", enemy_name, enemy_dmg);
-                player_hp -= enemy_dmg;
+                printf("You dealt %d damage to %s!\n", playerDmg, enemyName);
+                enemy_hp -= playerDmg;
+                printf("%s dealt to you %d damage!\n", enemyName, enemy_dmg);
+                playerHP -= enemy_dmg;
                 fflush(stdin);
                 break;
             case '2':
-                printf("You parry the %s attack and damage %d to him!\n", enemy_name, player_dmg / 2);
-                enemy_hp -= player_dmg / 2;
-                printf("%s dealt to you %d damage!\n", enemy_name, min_e_mdg);
-                player_hp -= min_e_mdg;
+                printf("You parry the %s attack and damage %d to him!\n", enemyName, playerDmg / 2);
+                enemy_hp -= playerDmg / 2;
+                printf("%s dealt to you %d damage!\n", enemyName, min_e_mdg);
+                playerHP -= min_e_mdg;
                 fflush(stdin);
                 break;
             case '3':
@@ -55,17 +55,17 @@ int battle() {
         if (enemy_hp < 0)
             enemy_hp = 0;
 
-        if (player_hp < 0)
-            player_hp = 0;
+        if (playerHP < 0)
+            playerHP = 0;
 
-        printf("\nYour HP:%d\n%s's HP:%d\n", player_hp, enemy_name, enemy_hp);
+        printf("\nYour HP:%d\n%s's HP:%d\n", playerHP, enemyName, enemy_hp);
 
-        player_death_check();
+        actChoose();
 
         fflush(stdin); // clear buffer
 
         if (enemy_hp == 0) {
-            looting(enemy_mod, enemy_lvl, enemy_name);
+            looting(enemyMod, enemyLVL, enemyName);
             break;
         }
     }

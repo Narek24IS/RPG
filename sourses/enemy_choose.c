@@ -4,11 +4,11 @@
 
 #include "includes/global.h"
 
-int enemy_choose(int action, char *enemy_name) {
+int enemyChoose(int action, char *enemyName) {
     // Выбор противника на бой
-    int enemy_mod = 0;
+    int enemyMod = 0;
 
-    while (enemy_mod == 0) {
+    while (enemyMod == 0) {
         printf("\nChoose enemy, %s:\n 1. Goblin\n 2. Cobold\n "
                "3. Murlok\n 4. Ent\n", nickname);
 
@@ -16,23 +16,23 @@ int enemy_choose(int action, char *enemy_name) {
 
         switch (action) {
             case '1':
-                enemy_mod = 1;
-                strcpy(enemy_name, "Goblin");
+                enemyMod = 1;
+                strcpy(enemyName, "Goblin");
                 fflush(stdin);
                 break;
             case '2':
-                enemy_mod = 2;
-                strcpy(enemy_name, "Cobold");
+                enemyMod = 2;
+                strcpy(enemyName, "Cobold");
                 fflush(stdin);
                 break;
             case '3':
-                enemy_mod = 3;
-                strcpy(enemy_name, "Murlok");
+                enemyMod = 3;
+                strcpy(enemyName, "Murlok");
                 fflush(stdin);
                 break;
             case '4':
-                enemy_mod = 4;
-                strcpy(enemy_name, "Ent");
+                enemyMod = 4;
+                strcpy(enemyName, "Ent");
                 fflush(stdin);
                 break;
             default:
@@ -41,5 +41,5 @@ int enemy_choose(int action, char *enemy_name) {
                 break;
         }
     }
-    return enemy_mod;
+    return enemyMod;
 }

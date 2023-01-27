@@ -8,6 +8,6 @@ int main() {
 
     while (1)
     {
-        act_choose();
+        actChoose();
     }
 }

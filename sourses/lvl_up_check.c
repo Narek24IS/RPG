@@ -4,20 +4,20 @@
 
 #include "includes/global.h"
 
-int lvl_up_check() {
+int lvlUpCheck() {
     // Поверка поднял ли игрок уровень и повышение характеристик в таком случае
-    int hp_up = rand() % 25;
-    if (player_exp / level_exp > 0) {
-        int dmg_up = rand() % 5 + 1;
-        ++player_level;
+    int hpUp = rand() % 25;
+    if (playerEXP / levelEXP > 0) {
+        int dmgUp = rand() % 5 + 1;
+        ++playerLevel;
         printf("Congratulations %s! You got level %d!\n\
 Your damage has increased by %d and your max health has increased by %d!\n",nickname,
-        player_level, dmg_up, hp_up);
-        player_max_hp += hp_up;
-        player_hp += hp_up;
-        player_dmg += dmg_up;
-        player_exp = player_exp % level_exp;
-        level_exp += 100;
+        playerLevel, dmgUp, hpUp);
+        playerMaxHP += hpUp;
+        playerHP += hpUp;
+        playerDmg += dmgUp;
+        playerEXP = playerEXP % levelEXP;
+        levelEXP += 100;
     }
 
     return 0;

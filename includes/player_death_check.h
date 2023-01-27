@@ -4,5 +4,5 @@
 
 #ifndef RPG_PLAYER_DEATH_CHECK_H
 #define RPG_PLAYER_DEATH_CHECK_H
-int player_death_check();
+int actChoose();
 #endif //RPG_PLAYER_DEATH_CHECK_H

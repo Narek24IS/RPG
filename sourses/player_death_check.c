@@ -3,10 +3,15 @@
 //
 #include "includes/global.h"
 
-int player_death_check() {
+int actChoose() {
     // Проверка смерти игрока и окончание игры в таком случае
-    if (player_hp == 0) {
+    if (playerHP == 0) {
         printf("You are dead! Game over!\n");
+        FILE *fout;
+        fout = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "w");
+        fprintf(fout, "%d %d %d %d %d %d %d %s %d", playerHP, playerDmg, playerCoins, playerLevel, playerEXP, levelEXP,
+                playerMaxHP, nickname, newGame);
+        fclose(fout);
         getchar();
         getchar();
         exit(0);

@@ -4,5 +4,5 @@
 
 #ifndef RPG_LVL_UP_CHECK_H
 #define RPG_LVL_UP_CHECK_H
-int lvl_up_check();
+int lvlUpCheck();
 #endif //RPG_LVL_UP_CHECK_H

@@ -1,5 +1,5 @@
-#ifndef GLOBAL_H
-#define GLOBAL_H
+#ifndef RPG_GLOBAL_H
+#define RPG_GLOBAL_H
 
 #include "main.h"
 #include "battle.h"

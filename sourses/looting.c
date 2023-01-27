@@ -4,14 +4,14 @@
 
 #include "includes/global.h"
 
-int looting(int enemy_mod, int enemy_lvl, char *enemy_name) {
+int looting(int enemyMod, int enemyLVL, char *enemyName) {
     // Выпадение награды за победу над противником
-    int enemy_exp = (rand() % 50 + enemy_mod + enemy_lvl) * enemy_mod * enemy_lvl;
-    int enemy_coins = rand() % 4 + enemy_mod + enemy_lvl;
+    int enemyEXP = (rand() % 50 + enemyMod + enemyLVL) * enemyMod * enemyLVL;
+    int enemyCoins = rand() % 4 + enemyMod + enemyLVL;
 
-    printf("\n%s has been defeat! You earn %d coins and %d EXP!\n", enemy_name, enemy_coins, enemy_exp);
-    player_coins += enemy_coins;
-    player_exp += enemy_exp;
-    lvl_up_check();
+    printf("\n%s has been defeat! You earn %d coins and %d EXP!\n", enemyName, enemyCoins, enemyEXP);
+    playerCoins += enemyCoins;
+    playerEXP += enemyEXP;
+    lvlUpCheck();
     return 0;
 }
