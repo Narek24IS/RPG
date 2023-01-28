@@ -10,6 +10,7 @@ int battle() {
     int enemyLVL = rand() % playerLevel + 1;
     int enemy_hp;
     char enemyName[10];
+    battleTutorial();
 
     enemyMod = enemyChoose(action, enemyName);
 
@@ -18,25 +19,26 @@ int battle() {
     printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n", enemyName, enemyLVL, enemy_hp);
 
     while (enemy_hp >= 0) {
-        int enemy_dmg = rand() % 4 * enemyMod * enemyLVL;
-        int min_e_mdg = enemy_dmg / 3;
+        int enemyDMG = rand() % 4 * enemyMod * enemyLVL;
+        int altEnemyDMG = enemyDMG / 3;
+        int altPlayerDMG = rand() % playerDmg + playerDmg/10;
 
-        printf("\nChoose an action:\n 1. Attack\n 2. Parry\n 3. Run\n");
+        printf("\nChoose an action:\n 1. Attack \n 2. Parry\n 3. Run\n");
         action = getchar();
 
         switch (action) {
             case '1':
                 printf("You dealt %d damage to %s!\n", playerDmg, enemyName);
                 enemy_hp -= playerDmg;
-                printf("%s dealt to you %d damage!\n", enemyName, enemy_dmg);
-                playerHP -= enemy_dmg;
+                printf("%s dealt to you %d damage!\n", enemyName, enemyDMG);
+                playerHP -= enemyDMG;
                 fflush(stdin);
                 break;
             case '2':
-                printf("You parry the %s attack and damage %d to him!\n", enemyName, playerDmg / 2);
-                enemy_hp -= playerDmg / 2;
-                printf("%s dealt to you %d damage!\n", enemyName, min_e_mdg);
-                playerHP -= min_e_mdg;
+                printf("You parry the %s attack and damage %d to him!\n", enemyName, altPlayerDMG);
+                enemy_hp -= altPlayerDMG;
+                printf("%s dealt to you %d damage!\n", enemyName, altEnemyDMG);
+                playerHP -= altEnemyDMG;
                 fflush(stdin);
                 break;
             case '3':

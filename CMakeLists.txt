@@ -25,6 +25,6 @@ add_executable(RPG
         sourses/enemy_choose.c includes/enemy_choose.h
         sourses/global_variables.c includes/global_variables.h
         sourses/player_death_check.c includes/player_death_check.h
-        sourses/save_the_game.c includes/save_the_game.h)
+        sourses/save_the_game.c includes/save_the_game.h sourses/battle_tutorial.c includes/battle_tutorial.h)
 
 target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARY})

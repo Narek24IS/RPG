@@ -9,8 +9,8 @@ int enemyChoose(int action, char *enemyName) {
     int enemyMod = 0;
 
     while (enemyMod == 0) {
-        printf("\nChoose enemy, %s:\n 1. Goblin\n 2. Cobold\n "
-               "3. Murlok\n 4. Ent\n", nickname);
+        printf("\nChoose enemy, %s:\n 1. Goblin(1x HP and DMG)\n 2. Cobold(2x HP and DMG)\n "
+               "3. Murlok(3x HP and DMG)\n 4. Ent(4x HP and DMG)\n", nickname);
 
         action = getchar();
 
