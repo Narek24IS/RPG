@@ -12,6 +12,7 @@
 #include "looting.h"
 #include "hello.h"
 #include "global_variables.h"
+#include "save_the_game.h"
 
 #include <stdio.h>
 #include <string.h>

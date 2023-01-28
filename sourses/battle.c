@@ -60,7 +60,7 @@ int battle() {
 
         printf("\nYour HP:%d\n%s's HP:%d\n", playerHP, enemyName, enemy_hp);
 
-        actChoose();
+        playerDeathCheck();
 
         fflush(stdin); // clear buffer
 

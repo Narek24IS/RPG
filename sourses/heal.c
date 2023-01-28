@@ -23,7 +23,7 @@ int heal() {
                 playerCoins -= spentCoin;
                 if (playerHP > playerMaxHP)
                     playerHP = playerMaxHP;
-                printf("You were heal by %d HP!\nYour HP: %d\n",
+                printf("You were heal by %d HP!\n\nYour HP: %d\n",
                        spentCoin * 5, playerHP);
                 fflush(stdin);
                 break;

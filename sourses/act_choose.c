@@ -6,9 +6,10 @@
 int actChoose() {
     // Выбор следующего действия
     int action;
-    printf("\nChoose an action:\n 1. Fight with another enemy\n 2. Check your status\n "
-           "3. Heal for coins\n 4. Quit the game\n");
-    re: action = getchar();
+    printf("\nChoose an action:");
+    re: printf("\n 1. Fight with another enemy\n 2. Check your status\n "
+           "3. Heal for coins\n 4. Save and quit\n 5. Quit without saving\n");
+    action = getchar();
 
     switch (action) {
         case '1':
@@ -24,17 +25,33 @@ int actChoose() {
             heal();
             break;
         case '4':
-            printf("Goodbye! Well done!\n");
-            FILE *fout;
-            fout = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "w");
-            fprintf(fout, "%d %d %d %d %d %d %d %s %d", playerHP, playerDmg, playerCoins, playerLevel, playerEXP, levelEXP,
-                    playerMaxHP, nickname, newGame);
-            fclose(fout);
-            getchar();
-            getchar();
-            exit(0);
+            fflush(stdin);
+            printf("Are you sure? (y/n)\n");
+            if (getchar() == 'y') {
+                printf("OK,goodbye! Well done!\n");
+                saveTheGame();
+                getchar();
+                getchar();
+                exit(0);
+            }
+            else {
+                printf("OK,then choose an action:");
+                fflush(stdin);
+                goto re;
+            }
+        case '5':
+            fflush(stdin);
+            printf("\nAre you sure? (y/n)\n");
+            if (getchar() == 'y') {
+                exit(0);
+            }
+            else {
+                printf("\nOK, then choose an action:");
+                fflush(stdin);
+                goto re;
+            }
         default:
-            printf("Please, select one of the options from the list!\n");
+            printf("Please, select one of the options from the list!");
             fflush(stdin);
             goto re;
     }

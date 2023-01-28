@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage"
+			"value" : "c:/Users/Hikinari/Documents/C/RPG/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -199,11 +199,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Flags used by the CXX compiler during all build types."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : "--coverage"
+			"type" : "STRING",
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -283,7 +283,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 "
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER",
@@ -347,7 +347,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "--coverage"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_DEBUG",
@@ -427,7 +427,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 "
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
 		},
 		{
 			"name" : "CMAKE_DLLTOOL",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -1695,7 +1695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug-coverage"
+			"value" : "C:/Users/Hikinari/Documents/C/RPG/cmake-build-debug"
 		},
 		{
 			"name" : "RPG_IS_TOP_LEVEL",

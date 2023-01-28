@@ -126,6 +126,13 @@ build CMakeFiles/RPG.dir/sourses/player_death_check.c.obj: C_COMPILER__RPG_Debug
   OBJECT_DIR = CMakeFiles\RPG.dir
   OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
 
+build CMakeFiles/RPG.dir/sourses/save_the_game.c.obj: C_COMPILER__RPG_Debug C$:/Users/Hikinari/Documents/C/RPG/sourses/save_the_game.c || cmake_object_order_depends_target_RPG
+  DEP_FILE = CMakeFiles\RPG.dir\sourses\save_the_game.c.obj.d
+  FLAGS = --coverage -g -fdiagnostics-color=always -std=gnu11
+  INCLUDES = -IC:/Users/Hikinari/Documents/C/RPG/.
+  OBJECT_DIR = CMakeFiles\RPG.dir
+  OBJECT_FILE_DIR = CMakeFiles\RPG.dir\sourses
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RPG
@@ -134,7 +141,7 @@ build CMakeFiles/RPG.dir/sourses/player_death_check.c.obj: C_COMPILER__RPG_Debug
 #############################################
 # Link the executable RPG.exe
 
-build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/sourses/main.c.obj CMakeFiles/RPG.dir/sourses/heal.c.obj CMakeFiles/RPG.dir/sourses/hello.c.obj CMakeFiles/RPG.dir/sourses/status.c.obj CMakeFiles/RPG.dir/sourses/battle.c.obj CMakeFiles/RPG.dir/sourses/looting.c.obj CMakeFiles/RPG.dir/sourses/act_choose.c.obj CMakeFiles/RPG.dir/sourses/lvl_up_check.c.obj CMakeFiles/RPG.dir/sourses/enemy_choose.c.obj CMakeFiles/RPG.dir/sourses/global_variables.c.obj CMakeFiles/RPG.dir/sourses/player_death_check.c.obj | C$:/msys64/mingw64/lib/libncurses.a
+build RPG.exe: C_EXECUTABLE_LINKER__RPG_Debug CMakeFiles/RPG.dir/sourses/main.c.obj CMakeFiles/RPG.dir/sourses/heal.c.obj CMakeFiles/RPG.dir/sourses/hello.c.obj CMakeFiles/RPG.dir/sourses/status.c.obj CMakeFiles/RPG.dir/sourses/battle.c.obj CMakeFiles/RPG.dir/sourses/looting.c.obj CMakeFiles/RPG.dir/sourses/act_choose.c.obj CMakeFiles/RPG.dir/sourses/lvl_up_check.c.obj CMakeFiles/RPG.dir/sourses/enemy_choose.c.obj CMakeFiles/RPG.dir/sourses/global_variables.c.obj CMakeFiles/RPG.dir/sourses/player_death_check.c.obj CMakeFiles/RPG.dir/sourses/save_the_game.c.obj | C$:/msys64/mingw64/lib/libncurses.a
   FLAGS = --coverage -g
   LINK_LIBRARIES = C:/msys64/mingw64/lib/libncurses.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RPG.dir
