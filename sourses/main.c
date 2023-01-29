@@ -6,8 +6,6 @@ int main() {
 
     hello();
 
-
-
     while (TRUE) {
         actChoose();
     }

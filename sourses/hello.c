@@ -42,7 +42,7 @@ int hello() {
             ngMenu(action);
             switch (action) {
                 case 1:
-
+                    fflush(stdin);
                     FILE *fin;
                     fin = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "r");
                     fscanf(fin, "%d %d %d %d %d %d %d %s %d", &playerHP, &playerDmg, &playerCoins,
@@ -80,7 +80,6 @@ int hello() {
                 case 2:
                 ng:
                     newGame = 1;
-                int test;
                     printf("\nHi, adventurer! What is your name?\n");
                     getchar();
                     fgets(nickname, sizeof(nickname), stdin); // ввод ника

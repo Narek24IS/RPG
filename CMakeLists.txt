@@ -6,7 +6,11 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 
-set(SOURCE
+add_executable(RPG
+        .idea/.gitignore
+        .idea/modules.xml
+        .idea/RPG.iml
+        .idea/workspace.xml
         sourses/main.c
         sourses/heal.c
         sourses/hello.c
@@ -19,9 +23,7 @@ set(SOURCE
         sourses/global_variables.c
         sourses/player_death_check.c
         sourses/save_the_game.c
-        sourses/battle_tutorial.c)
-
-set(HEADER
+        sourses/battle_tutorial.c
         includes/global.h
         includes/main.h
         includes/heal.h
@@ -36,12 +38,4 @@ set(HEADER
         includes/player_death_check.h
         includes/save_the_game.h
         includes/battle_tutorial.h)
-
-add_executable(RPG
-        .idea/.gitignore
-        .idea/modules.xml
-        .idea/RPG.iml
-        .idea/workspace.xml
-        ${SOURCE}
-        ${HEADER})
 
