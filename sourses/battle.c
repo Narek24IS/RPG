@@ -2,74 +2,97 @@
 // Created by Hikinari on 24.01.2023.
 //
 #include "includes/global.h"
+void battleMenu(int action, char enemyName[10], int enemyLVL, int enemyHP){
+    system("cls");
+    battleTutorial();
+    printf("\nLVL.%d %s - %d HP\n", enemyLVL, enemyName, enemyHP);
+    printf("\nLVL.%d %s - %d HP %d DMG\n", playerLevel, nickname, playerHP, playerDmg);
+    printf("\nChoose an action:\n%s 1. Attack", action == 1 ? ">" : " ");
+    printf("\n%s 2. Parry", action == 2 ? ">" : " ");
+    printf("\n%s 3. Run", action == 3 ? ">" : " ");
+}
 
 int battle() {
     // Механика сражения, выборы действий
-    int action;
+    int action = 1;
+    int laction = 3;
     int enemyMod;
     int enemyLVL = rand() % playerLevel + 1;
-    int enemy_hp;
+    int enemyHP;
     char enemyName[10];
-    battleTutorial();
 
-    enemyMod = enemyChoose(action, enemyName);
+    enemyMod = enemyChoose(enemyName);
 
-    enemy_hp = enemyLVL * playerDmg * enemyMod - rand() % 10 * 10 / 15;
+    enemyHP = enemyLVL * playerDmg * enemyMod - rand() % 10 * 10 / 15;
+    battleMenu(action, enemyName, enemyLVL, enemyHP);
 
-    printf("\nYou meet a %s:\nLevel:%d\nHP:%d\n", enemyName, enemyLVL, enemy_hp);
-
-    while (enemy_hp >= 0) {
+    while (enemyHP >= 0) {
         int enemyDMG = rand() % 4 * enemyMod * enemyLVL;
         int altEnemyDMG = enemyDMG / 3;
         int altPlayerDMG = rand() % playerDmg + playerDmg/10;
 
-        printf("\nChoose an action:\n 1. Attack \n 2. Parry\n 3. Run\n");
-        action = getchar();
-
-        switch (action) {
-            case '1':
-                printf("You dealt %d damage to %s!\n", playerDmg, enemyName);
-                enemy_hp -= playerDmg;
-                printf("%s dealt to you %d damage!\n", enemyName, enemyDMG);
-                playerHP -= enemyDMG;
-                fflush(stdin);
-                break;
-            case '2':
-                printf("You parry the %s attack and damage %d to him!\n", enemyName, altPlayerDMG);
-                enemy_hp -= altPlayerDMG;
-                printf("%s dealt to you %d damage!\n", enemyName, altEnemyDMG);
-                playerHP -= altEnemyDMG;
-                fflush(stdin);
-                break;
-            case '3':
-                printf("You ran away");
-                fflush(stdin);
-                break;
-            default:
-                printf("\nChoose one of the 1-3 buttons,what to perform the action\n");
-                fflush(stdin);
-                break;
+        if(GetAsyncKeyState(VK_UP))
+        {
+            keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
+            if(0 < action - 1)
+                action = action - 1;
+            else
+                action = laction;
+            battleMenu(action, enemyName, enemyLVL, enemyHP);
         }
+        if(GetAsyncKeyState(VK_DOWN))
+        {
+            keybd_event(VK_DOWN, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
+            if(action < laction)
+                action = action + 1;
+            else
+                action = 1;
+            battleMenu(action, enemyName, enemyLVL, enemyHP);
+        }
+        if(GetAsyncKeyState(VK_SPACE))
+        {
+            keybd_event(VK_SPACE, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
+            battleMenu(action, enemyName, enemyLVL, enemyHP);
 
-        if (action == '3')
-            break;
-
-        if (enemy_hp < 0)
-            enemy_hp = 0;
-
-        if (playerHP < 0)
-            playerHP = 0;
-
-        printf("\nYour HP:%d\n%s's HP:%d\n", playerHP, enemyName, enemy_hp);
+            switch (action) {
+                case 1:
+                    enemyHP -= playerDmg;
+                    playerHP -= enemyDMG;
+                    if (enemyHP < 0)
+                        enemyHP = 0;
+                    if (playerHP < 0)
+                        playerHP = 0;
+                    battleMenu(action, enemyName, enemyLVL, enemyHP);
+                    fflush(stdin);
+                    break;
+                case 2:
+                    enemyHP -= altPlayerDMG;
+                    playerHP -= altEnemyDMG;
+                    if (enemyHP < 0)
+                        enemyHP = 0;
+                    if (playerHP < 0)
+                        playerHP = 0;
+                    battleMenu(action, enemyName, enemyLVL, enemyHP);
+                    fflush(stdin);
+                    break;
+                case 3:
+                    printf("\n\nYou ran away");
+                    fflush(stdin);
+                    goto quit;
+            }
+        }
 
         playerDeathCheck();
 
         fflush(stdin); // clear buffer
 
-        if (enemy_hp == 0) {
+        if (enemyHP == 0) {
+            fflush(stdin);
             looting(enemyMod, enemyLVL, enemyName);
             break;
         }
     }
+    quit:
+    fflush(stdin);
     return 0;
 }

@@ -15,6 +15,7 @@
 #include "save_the_game.h"
 #include "battle_tutorial.h"
 
+#include <windows.h>
 #include <stdio.h>
 #include <string.h>
 #include <time.h>

@@ -9,6 +9,7 @@ int status() {
     printf("\n%s\nLevel:%d\nEXP:%d/%d\nHP:%d/%d\nDamage:%d\nYour coins:%d\n",
            nickname, playerLevel, playerEXP, levelEXP, playerHP, playerMaxHP,
            playerDmg, playerCoins);
-
+    printf("\nPress ENTER to continue\n");
+    getchar();
     return 0;
 }

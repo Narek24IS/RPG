@@ -6,7 +6,7 @@
 int playerDeathCheck() {
     // Проверка смерти игрока и окончание игры в таком случае
     if (playerHP == 0) {
-        printf("You are dead! Game over!\n");
+        printf("\n\nYou are dead! Game over!\n");
         saveTheGame();
         getchar();
         exit(0);

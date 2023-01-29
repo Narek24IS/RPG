@@ -4,5 +4,5 @@
 
 #ifndef RPG_ENEMY_CHOOSE_H
 #define RPG_ENEMY_CHOOSE_H
-int enemyChoose(int action, char *enemyName);
+int enemyChoose(char *enemyName);
 #endif //RPG_ENEMY_CHOOSE_H

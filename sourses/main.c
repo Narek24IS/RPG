@@ -6,7 +6,9 @@ int main() {
 
     hello();
 
-    while (1)
+    fflush(stdin);
+
+    while(TRUE)
     {
         actChoose();
     }
