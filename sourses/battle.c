@@ -51,7 +51,6 @@ int battle() {
         if (GetAsyncKeyState(VK_RETURN)) {
             keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
             battleMenu(action, enemyName, enemyLVL, enemyHP);
-
             switch (action) {
                 case 1:
                     enemyHP -= playerDmg;
@@ -61,7 +60,6 @@ int battle() {
                     if (playerHP < 0)
                         playerHP = 0;
                     battleMenu(action, enemyName, enemyLVL, enemyHP);
-
                     break;
                 case 2:
                     enemyHP -= altPlayerDMG;
@@ -71,7 +69,6 @@ int battle() {
                     if (playerHP < 0)
                         playerHP = 0;
                     battleMenu(action, enemyName, enemyLVL, enemyHP);
-
                     break;
                 case 3:
                     printf("\n\nYou ran away");
@@ -82,10 +79,7 @@ int battle() {
 
         playerDeathCheck();
 
-        // clear buffer
-
         if (enemyHP == 0) {
-
             looting(enemyMod, enemyLVL, enemyName);
             break;
         }

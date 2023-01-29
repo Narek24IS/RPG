@@ -9,10 +9,10 @@ int looting(int enemyMod, int enemyLVL, char *enemyName) {
     int enemyEXP = (rand() % 50 + enemyMod + enemyLVL) * enemyMod * enemyLVL;
     int enemyCoins = rand() % 4 + enemyMod + enemyLVL;
 
+    system("cls");
     printf("\n\n%s has been defeat! You earn %d coins and %d EXP!\n", enemyName, enemyCoins, enemyEXP);
     playerCoins += enemyCoins;
     playerEXP += enemyEXP;
-    lvlUpCheck();
     printf("\nPress ENTER to continue\n");
     while(TRUE) {
         if (GetAsyncKeyState(VK_RETURN)) {
@@ -20,5 +20,6 @@ int looting(int enemyMod, int enemyLVL, char *enemyName) {
             break;
         }
     }
+    lvlUpCheck();
     return 0;
 }

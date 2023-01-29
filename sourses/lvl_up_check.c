@@ -6,6 +6,7 @@
 
 int lvlUpCheck() {
     // Поверка поднял ли игрок уровень и повышение характеристик в таком случае
+    system("cls");
     int hpUp = rand() % 25 + 5;
     if (playerEXP / levelEXP > 0) {
         int dmgUp = rand() % 5 + 1;

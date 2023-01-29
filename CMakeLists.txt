@@ -37,5 +37,5 @@ add_executable(RPG
         includes/global_variables.h
         includes/player_death_check.h
         includes/save_the_game.h
-        includes/battle_tutorial.h)
+        includes/battle_tutorial.h sourses/noCursor.c includes/noCursor.h)
 

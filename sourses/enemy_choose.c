@@ -9,7 +9,7 @@ void enemyChooseMenu(int action) {
     printf("\nChoose enemy, %s:\n%s 1. Goblin(1x HP and DMG)", nickname, action == 1 ? ">" : " ");
     printf("\n%s 2. Cobold(2x HP and DMG)", action == 2 ? ">" : " ");
     printf("\n%s 3. Murlok(3x HP and DMG)", action == 3 ? ">" : " ");
-    printf("\n%s 4. Ent(4x HP and DMG)", action == 4 ? ">" : " ");
+    printf("\n%s 4. Ent(4x HP and DMG)\n", action == 4 ? ">" : " ");
 }
 
 int enemyChoose(char *enemyName) {

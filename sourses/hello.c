@@ -42,7 +42,7 @@ int hello() {
             ngMenu(action);
             switch (action) {
                 case 1:
-                    fflush(stdin);
+                    system("cls");
                     FILE *fin;
                     fin = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "r");
                     fscanf(fin, "%d %d %d %d %d %d %d %s %d", &playerHP, &playerDmg, &playerCoins,
@@ -79,6 +79,7 @@ int hello() {
                     }
                 case 2:
                 ng:
+                    system("cls");
                     newGame = 1;
                     printf("\nHi, adventurer! What is your name?\n");
                     getchar();

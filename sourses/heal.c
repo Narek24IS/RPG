@@ -12,9 +12,9 @@ void healMenu(int action) {
     printf("\n%s 2. 3 coin - 15 HP", action == 2 ? ">" : " ");
     printf("\n%s 3. 5 coin - 25 HP", action == 3 ? ">" : " ");
     printf("\n%s 4. 10 coin - 50 HP", action == 4 ? ">" : " ");
-    printf("\n%s 5. %d coin - %d HP", action == 4 ? ">" : " ", playerCoins, playerCoins*5);
-    printf("\n%s 6. Full HP for %d coins", action == 5 ? ">" : " ", (playerMaxHP - playerHP) / 5);
-    printf("\n%s 7. Return\n", action == 6 ? ">" : " ");
+    printf("\n%s 5. %d coin - %d HP", action == 5 ? ">" : " ", playerCoins, playerCoins * 5);
+    printf("\n%s 6. Full HP for %d coins", action == 6 ? ">" : " ", (playerMaxHP - playerHP) / 5);
+    printf("\n%s 7. Return\n", action == 7 ? ">" : " ");
 }
 
 int heal() {
@@ -52,7 +52,7 @@ int heal() {
 
                 switch (action) {
                     case 1:
-
+                        system("cls");
                         spentCoin = 1;
                         if (spentCoin > playerCoins) {
                             printf("You have only %d coins.\n", playerCoins);
@@ -75,7 +75,7 @@ int heal() {
                             goto end;
                         }
                     case 2:
-
+                        system("cls");
                         spentCoin = 3;
                         if (spentCoin > playerCoins) {
                             printf("You have only %d coins.\n", playerCoins);
@@ -98,6 +98,7 @@ int heal() {
                             goto end;
                         }
                     case 3:
+                        system("cls");
                         spentCoin = 5;
                         if (spentCoin > playerCoins) {
                             printf("You have only %d coins.\n", playerCoins);
@@ -120,6 +121,7 @@ int heal() {
                             goto end;
                         }
                     case 4:
+                        system("cls");
                         spentCoin = 10;
                         if (spentCoin > playerCoins) {
                             printf("You have only %d coins.\n", playerCoins);
@@ -142,12 +144,12 @@ int heal() {
                             goto end;
                         }
                     case 5:
-                        spentCoin = playerCoins;
-                        playerHP = playerCoins*5;
-                        playerCoins = 0;
+                        system("cls");
+                        playerHP += playerCoins * 5;
                         if (playerHP > playerMaxHP)
                             playerHP = playerMaxHP;
-                        printf("You were heal by %d HP!\n\n", playerCoins*5);
+                        printf("You were heal by %d HP!\n\n", playerCoins * 5);
+                        playerCoins = 0;
                         printf("\nPress ENTER to continue\n");
                         while (TRUE) {
                             if (GetAsyncKeyState(VK_RETURN)) {
@@ -157,6 +159,7 @@ int heal() {
                         }
                         goto end;
                     case 6:
+                        system("cls");
                         spentCoin = (playerMaxHP - playerHP) / 5;
                         if (spentCoin > playerCoins) {
                             printf("You have only %d coins.\n", playerCoins);

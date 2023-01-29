@@ -14,6 +14,7 @@
 #include "global_variables.h"
 #include "save_the_game.h"
 #include "battle_tutorial.h"
+#include "noCursor.h"
 
 #include <windows.h>
 #include <stdio.h>
@@ -21,5 +22,6 @@
 #include <time.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <conio.h>
 
 #endif

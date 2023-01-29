@@ -6,7 +6,8 @@
 
 int status() {
     // Показывает все характеристики игрока на данный момент
-    printf("\n%s\nLevel:%d\nEXP:%d/%d\nHP:%d/%d\nDamage:%d\nYour coins:%d\n",
+    system("cls");
+    printf("  %s\n\nLevel:%d\nEXP:%d/%d\nHP:%d/%d\nDamage:%d\nYour coins:%d\n",
            nickname, playerLevel, playerEXP, levelEXP, playerHP, playerMaxHP,
            playerDmg, playerCoins);
     printf("\nPress ENTER to continue\n");
