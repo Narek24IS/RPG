@@ -80,6 +80,7 @@ int hello() {
                 case 2:
                 ng:
                     newGame = 1;
+                int test;
                     printf("\nHi, adventurer! What is your name?\n");
                     getchar();
                     fgets(nickname, sizeof(nickname), stdin); // ввод ника
