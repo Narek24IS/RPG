@@ -5,6 +5,7 @@
 #include "includes/global.h"
 
 int saveTheGame() {
+    //Записывает на файл статистику персонажа на данный момент
     FILE *fout;
     fout = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "w");
     fprintf(fout, "%d %d %d %d %d %d %d %s %d", playerHP, playerDmg, playerCoins, playerLevel, playerEXP, levelEXP,

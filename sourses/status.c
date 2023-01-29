@@ -10,6 +10,7 @@ int status() {
     printf("  %s\n\nLevel:%d\nEXP:%d/%d\nHP:%d/%d\nDamage:%d\nYour coins:%d\n",
            nickname, playerLevel, playerEXP, levelEXP, playerHP, playerMaxHP,
            playerDmg, playerCoins);
+    //Нужно нажать ENTER, чтобы продолжить
     printf("\nPress ENTER to continue\n");
     while (TRUE) {
         if (GetAsyncKeyState(VK_RETURN)) {

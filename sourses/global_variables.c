@@ -1,7 +1,7 @@
 //
 // Created by Hikinari on 24.01.2023.
 //
-
+//Глобальные переменные
 int playerHP = 100;
 int playerDmg = 10;
 int playerCoins = 0;

@@ -6,12 +6,12 @@
 int playerDeathCheck() {
     // Проверка смерти игрока и окончание игры в таком случае
     if (playerHP == 0) {
-        system("cls");
-        printf("\n\nYou are dead! Game over!\n");
-        saveTheGame();
+        system("cls");//Очищает окно командной строки
+        printf("\n\nYou are dead! Game over!\n");//Вы умерли, конец игры
+        saveTheGame();//Сохраняет игру
+        getchar();//Оставляет консоль открытой пока не нажать кнопку
         getchar();
-        getchar();
-        exit(0);
+        exit(0);//Выход из программы с кодом 0
     }
     return 0;
 }

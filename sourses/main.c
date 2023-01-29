@@ -2,15 +2,13 @@
 
 int main() {
     //Основное действие
-    srand(time(NULL));
-    noCursor();
-    setlocale(LC_ALL, "russian");
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    srand(time(NULL));//Определяет семя рандома, зависящее от времени
+    noCursor();//Вызывает функцию убирающую курсор
 
-    hello();
+    hello();//Приветствие игрока
 
     while (TRUE) {
+        //Бесконечный цикл с меню выбора действий
         actChoose();
     }
 }

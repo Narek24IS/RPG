@@ -5,6 +5,7 @@
 #include "includes/global.h"
 
 int battleTutorial() {
+    //Мини-гайд по бою
     printf("\n\n                 TUTORIAL\n\nAttack - you deal full DMG(%d) and take full enemy DMG\n"
            "Parry - you deal a random amount of damage(Maximum - %d) + 10%% of your damage(%d)\n"
            "Run - go to lobby.\n\n", playerDmg, playerDmg, playerDmg / 10);
