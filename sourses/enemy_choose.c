@@ -6,23 +6,23 @@
 
 void enemyChooseMenu(int action) {
     system("cls");
-    printf("\nChoose enemy, %s:\n%s 1. Goblin(1x HP and DMG)",nickname, action == 1 ? ">" : " ");
+    printf("\nChoose enemy, %s:\n%s 1. Goblin(1x HP and DMG)", nickname, action == 1 ? ">" : " ");
     printf("\n%s 2. Cobold(2x HP and DMG)", action == 2 ? ">" : " ");
     printf("\n%s 3. Murlok(3x HP and DMG)", action == 3 ? ">" : " ");
     printf("\n%s 4. Ent(4x HP and DMG)", action == 4 ? ">" : " ");
 }
 
-int enemyChoose(char *enemyName){
+int enemyChoose(char *enemyName) {
     // Выбор противника на бой
     int enemyMod = 0;
     int action = 1;
     int laction = 4;
 
-    fflush(stdin);
+
     enemyChooseMenu(action);
 
     while (enemyMod == 0) {
-        fflush(stdin);
+
         if (GetAsyncKeyState(VK_UP)) {
             keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
             if (0 < action - 1)
@@ -39,29 +39,29 @@ int enemyChoose(char *enemyName){
                 action = 1;
             enemyChooseMenu(action);
         }
-        if (GetAsyncKeyState(VK_SPACE)) {
-            keybd_event(VK_SPACE, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
+        if (GetAsyncKeyState(VK_RETURN)) {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
             enemyChooseMenu(action);
             switch (action) {
                 case 1:
                     enemyMod = 1;
                     strcpy(enemyName, "Goblin");
-                    fflush(stdin);
+
                     break;
                 case 2:
                     enemyMod = 2;
                     strcpy(enemyName, "Cobold");
-                    fflush(stdin);
+
                     break;
                 case 3:
                     enemyMod = 3;
                     strcpy(enemyName, "Murlok");
-                    fflush(stdin);
+
                     break;
                 case 4:
                     enemyMod = 4;
                     strcpy(enemyName, "Ent");
-                    fflush(stdin);
+
                     break;
             }
         }

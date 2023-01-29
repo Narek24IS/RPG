@@ -10,6 +10,11 @@ int status() {
            nickname, playerLevel, playerEXP, levelEXP, playerHP, playerMaxHP,
            playerDmg, playerCoins);
     printf("\nPress ENTER to continue\n");
-    getchar();
+    while (TRUE) {
+        if (GetAsyncKeyState(VK_RETURN)) {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+            break;
+        }
+    }
     return 0;
 }

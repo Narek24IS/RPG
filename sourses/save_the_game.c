@@ -3,7 +3,8 @@
 //
 
 #include "includes/global.h"
-int saveTheGame(){
+
+int saveTheGame() {
     FILE *fout;
     fout = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "w");
     fprintf(fout, "%d %d %d %d %d %d %d %s %d", playerHP, playerDmg, playerCoins, playerLevel, playerEXP, levelEXP,

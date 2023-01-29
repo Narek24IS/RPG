@@ -14,6 +14,11 @@ int looting(int enemyMod, int enemyLVL, char *enemyName) {
     playerEXP += enemyEXP;
     lvlUpCheck();
     printf("\nPress ENTER to continue\n");
-    getchar();
+    while(TRUE) {
+        if (GetAsyncKeyState(VK_RETURN)) {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+            break;
+        }
+    }
     return 0;
 }

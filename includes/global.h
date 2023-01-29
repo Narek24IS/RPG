@@ -20,5 +20,6 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <locale.h>
 
 #endif

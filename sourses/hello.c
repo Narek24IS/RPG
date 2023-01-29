@@ -4,7 +4,7 @@
 
 #include "includes/global.h"
 
-void ngMenu(int action){
+void ngMenu(int action) {
     system("cls");
     printf("Do you want to start a new game or continue a previous game session?\n");
     printf("\n%s 1. Continue game \n", action == 1 ? ">" : " ");
@@ -16,11 +16,11 @@ int hello() {
     int action = 1;
     int laction = 2;
 
-    fflush(stdin);
+
     ngMenu(action);
 
     while (TRUE) {
-        fflush(stdin);
+
         if (GetAsyncKeyState(VK_UP)) {
             keybd_event(VK_UP, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
             if (0 < action - 1)
@@ -37,16 +37,16 @@ int hello() {
                 action = 1;
             ngMenu(action);
         }
-        if (GetAsyncKeyState(VK_SPACE)) {
-            keybd_event(VK_SPACE, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
+        if (GetAsyncKeyState(VK_RETURN)) {
+            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);//Отжимаем кнопку
             ngMenu(action);
             switch (action) {
                 case 1:
-                    fflush(stdin);
+
                     FILE *fin;
                     fin = fopen("C:\\Users\\Hikinari\\Documents\\C\\RPG\\save.txt", "r");
-                    fscanf(fin, "%d %d %d %d %d %d %d %s %d", &playerHP, &playerDmg, &playerCoins, &playerLevel,
-                           &playerEXP, &levelEXP, &playerMaxHP, &nickname[10], &newGame);
+                    fscanf(fin, "%d %d %d %d %d %d %d %s %d", &playerHP, &playerDmg, &playerCoins,
+                           &playerLevel, &playerEXP, &levelEXP, &playerMaxHP, &nickname, &newGame);
                     fclose(fin);
                     if (playerHP == 0) {
                         if (playerCoins != 0) {
@@ -80,8 +80,8 @@ int hello() {
                 case 2:
                 ng:
                     newGame = 1;
-                    printf("Hi, adventurer! What is your name?\n");
-
+                    printf("\nHi, adventurer! What is your name?\n");
+                    getchar();
                     fgets(nickname, sizeof(nickname), stdin); // ввод ника
 
                     if (nickname[strlen(nickname) - 1] == '\n')
@@ -89,14 +89,20 @@ int hello() {
                     else
                         fflush(stdin); // очистить буфер от лишних символов
 
-                    printf("Okay, %s, now let's check your stats!\n", nickname);
-                    fflush(stdin);
+                    printf("Okay, %s, now let's check your stats! And then we'll test your skills in battle\n",
+                           nickname);
+
+                    while(TRUE) {
+                        if (GetAsyncKeyState(VK_RETURN)) {
+                            keybd_event(VK_RETURN, 0, KEYEVENTF_KEYUP, 0);
+                            break;
+                        }
+                    }
+
+
                     status();
-                    printf("\n\nNot bad! Let's see how you fight!\n");
-                    printf("\nPress ENTER to continue\n");
-                    getchar();
                     battle();
-                    fflush(stdin);
+
                     goto hello_end;
             }
         }
